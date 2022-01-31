@@ -343,9 +343,11 @@ img{
   height: 100vh;
   max-height: 100vh;
   position: absolute;
-  transform: translateX(-170px);
+  transform: translateX(32px);
   box-shadow: 0px 0px 15px #0202026e;
   padding-right: 0;
+  transition: .6s;
+
 
 }
 .scroll::-webkit-scrollbar ,.info::-webkit-scrollbar,.main-info::-webkit-scrollbar {
@@ -360,24 +362,25 @@ img{
   max-height: 100vh;
 }
 .name-info{
-  transform: translateX(51vw) translateY(-4.35vw) rotate( 
+  transform: translateX(32.2vw) translateY(-5.35vw) rotate( 
     90deg
      );
         transform-origin: bottom left;
         align-items: center;
         width: 100vh;
         padding-top: 1.35vw;
-        /* display: flex; */
-        position: sticky;
-        top: 0;
+        display: flex;
+        position: fixed;
+        top: 20px;
+        cursor: pointer;
   
 }
 .name-info h3{
   font-family: 'DrukText';
-  font-size: 1.4rem;
+  font-size: 25px;
 }
 .main-info .info{
-  padding: 0 4rem;
+  padding: 0 6rem;
 }
 .galeria_img{
   margin-bottom: 2rem;
@@ -385,6 +388,21 @@ img{
 .info p{
   font-family: 'VanderKeur';
   font-size: 11px;
+}
+.logo-info{
+  text-align: end;
+}
+.logo-info img{
+  width: 30%;
+}
+.main-info-hover:hover{
+  transform: translateX(564px);
+}
+.main-info:hover{
+  transform: translateX(50px);
+}
+.hidden-info{
+  visibility: hidden;
 }
 /*******mediasquery **********/
 @media only screen and (max-width: 600px) {

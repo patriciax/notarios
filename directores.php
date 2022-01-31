@@ -1,7 +1,7 @@
 <?php require('partials/header.php'); ?>
 
 <section class="main-director">
-  <div class="main-director_item">
+  <div class="main-director_item hidden-info">
     <div class="panel">
       <div class="main-galeria scroll">
         <div class="galeria_img">
@@ -15,7 +15,7 @@
         </div>
 
       </div>
-      <div class="main-info ">
+      <div class="main-info  ">
      
         <div class="info scroll">
         <div class="name-info">
@@ -43,22 +43,31 @@
           <div class="logo-info">
             <img src="assets/img/logo.png" alt="">
           </div>
+          <div class="footer-info">
+            <p>2021© NOTARIOS.TV ALL RIGHTS RESERVED </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="main-director_item">
    <div class="main-director-names">
-   <p>FELIPE CORTES</p>
-    <p>ALEJANDRO CARREÑO
+   <p data-aos="fade-up"
+     data-aos-duration="1000">FELIPE CORTES</p>
+    <p data-aos="fade-up"
+     data-aos-duration="1500">ALEJANDRO CARREÑO
     </p>
-    <p>ESTEBAN URIBE
+    <p data-aos="fade-up"
+     data-aos-duration="2000">ESTEBAN URIBE
     </p>
-    <p>GINA MEDINA
+    <p data-aos="fade-up"
+     data-aos-duration="2500">GINA MEDINA
     </p>
-    <p>KLAUS OBERMEYER
+    <p data-aos="fade-up"
+     data-aos-duration="3000">KLAUS OBERMEYER
     </p>
-    <p>IPSUM LOREMSDF
+    <p data-aos="fade-up"
+     data-aos-duration="3000">IPSUM LOREMSDF
     </p>
    </div>
   </div>
