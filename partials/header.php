@@ -36,11 +36,11 @@
             <ul class="menu">
               <li><a class="menu-link" href="/">Home</a></li>
               <li><a class="menu-link" href="directores.php">DIRECTORES</a></li>
-              <li><a class="menu-link" href="#">ABOUT US</a></li>
-              <li><a class="menu-link" href="#">SERVICES</a></li>
-              <li><a class="menu-link" href="#">FILMS</a></li>
-              <li><a class="menu-link" href="#">CONTACT</a></li>
-              <li><a class="menu-link" href="#">(FOLDER) </a></li>
+              <li><a class="menu-link" href="about.php">ABOUT US</a></li>
+             <!-- <li><a class="menu-link" href="#">SERVICES</a></li>
+              <li><a class="menu-link" href="#">FILMS</a></li>-->
+              <li><a class="menu-link" href="contact.php">CONTACT</a></li>
+              <li><a class="menu-link" href="#">Private </a></li>
             </ul>
           </aside>
         </header>
