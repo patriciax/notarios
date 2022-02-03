@@ -603,19 +603,23 @@ width: 140px;
   }
 }
 
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 200px;
+.slider-text {
+  background: black;
+  /* box-shadow: 0 10px 20px -5px rgb(0 0 0 / 13%); */
+  height: 18px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 985px;
+  position: absolute;
+  top: 30%;
+  padding: 0.3rem;
+  left: 8px;
 }
 
-.slider::before,
-.slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+.slider-text::before,
+.slider-text::after {
+  /*background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);*/
   content: "";
   height: 100px;
   position: absolute;
@@ -623,39 +627,96 @@ width: 140px;
   z-index: 2;
 }
 
-.slider::after {
+.slider-text::after {
   right: 0;
   top: 0;
   -webkit-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
 }
 
-.slider::before {
+.slider-text::before {
   left: 0;
   top: 0;
 }
 
-.slider .slide-track {
+.slider-text .slide-track {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
 
-.slider .slide {
+.slider-text .slide {
   height: 100px;
-  width: 250px;
+  width: 260px;
+  color: #fff;
+  font-size: .6rem;
+  font-family: 'VanderKeur';
+  font-weight: 100;
+  text-transform: uppercase;
+
 }
 .contact{
   padding-left: 1rem;
+  padding-top: 2rem;
 }
 .contact-item{
-
+  position: relative;
 }
-.contact-item p{
+.contact-item .title-contact{
   font-size: 85px;
   font-weight: bold;
   font-family: "DrukText";
+  margin: 0;
+  cursor: pointer;
+}
+.slide-track p{
+  margin: 0;
+}
+.datos{
+  visibility: hidden;
+  height: 0;
+}
+.slider-text{
+  visibility: hidden;
+}
+.datos{
+  position: absolute;
+  transform: translate(10px, 15rem);
+  transition: .6s;
+}
+.contact-item .datos{
+  display: flex;
+  flex-direction: column;
+
+}
+.datos a, .datos p{
+  color: #000;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'DrukText';
+  margin: 0;
+
+}
+.datos p{
+  max-width: 550px;
+}
+
+.contact-item:hover  .datos a, .contact-item:hover  .datos p{
+  height: auto;
+  visibility: visible;
+
+}
+.contact-item:hover .slider-text{
+
+  visibility: visible;
+
+}
+.contact-item:nth-child(2) .datos{
+  transform: translate(10px, 10rem);
+}
+.contact-item:nth-child(3) .datos{
+  transform: translate(10px, 4.5rem);
 }
 /*******mediasquery **********/
 @media only screen and (max-width: 600px) {
