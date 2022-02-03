@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+<script></script>
 </head>
 
 <body data-barba="wrapper">
@@ -34,7 +34,7 @@
 
           <aside class="sidebar">
             <ul class="menu">
-              <li><a class="menu-link" href="/">Home</a></li>
+              <li><a class="menu-link" href="index.php">Home</a></li>
               <li><a class="menu-link" href="directores.php">DIRECTORES</a></li>
               <li><a class="menu-link" href="about.php">ABOUT US</a></li>
              <!-- <li><a class="menu-link" href="#">SERVICES</a></li>

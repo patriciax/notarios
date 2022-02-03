@@ -1,5 +1,5 @@
 <?php require('partials/header.php'); ?>
-
+<main data-barba="container" data-barba-namespace="about-section">
 <section>
     <figure class="card-flip fancy-hover">
         <div class="card-flip__flipper">
@@ -38,4 +38,6 @@
         display: none;
     }
 </style>
+</main>
+
 <?php require('partials/footer.php'); ?>

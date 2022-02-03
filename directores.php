@@ -1,5 +1,5 @@
 <?php require('partials/header.php'); ?>
-
+<main   data-barba="container" data-barba-namespace="director-section">
 <section class="main-director">
   <div class="main-director_item ">
     <!------------------panel 1--------------------------->
@@ -51,18 +51,18 @@
         </div>
       </div>
     </div>
- 
+
   </div>
   <div class="main-director_item">
     <div class="main-director-names">
       <p data-aos="fade-up" data-aos-duration="1000">FELIPE CORTES
-<div class="panel">prueba panel 1</div>
+      <div class="panel">prueba panel 1</div>
 
       </p>
       <p data-aos="fade-up" data-aos-duration="1500">ALEJANDRO CARREÑO
       <div class="panel">prueba panel ss1</div>
- 
-    </p>
+
+      </p>
       <p data-aos="fade-up" data-aos-duration="2000">ESTEBAN URIBE
       </p>
       <p data-aos="fade-up" data-aos-duration="2500">GINA MEDINA
@@ -74,6 +74,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 
 

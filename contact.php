@@ -1,5 +1,5 @@
 <?php require('partials/header.php'); ?>
-
+<main data-barba="container" data-barba-namespace="contact-section">
 <section class="contact">
   <div class="contact-item">
     <p class="title-contact">JUAN P. BERNAL</p>
@@ -154,4 +154,6 @@
     display: none;
   }
 </style>
+</main>
+
 <?php require('partials/footer.php'); ?>

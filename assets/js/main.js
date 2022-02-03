@@ -3,6 +3,7 @@ function delay(n) {
     return new Promise((done) => {
         setTimeout(() => {
             done();
+           
         }, n);
     });
 }
@@ -43,78 +44,55 @@ $(function () {
                     pageTransition();
                     await delay(1000);
                     done();
+                    
                 },
 
                 async enter(data) {
                     contentAnimation();
+                   
                 },
 
                 async once(data) {
                     contentAnimation();
+                 
                 },
+            
             },
         ],
     });
 });
 
 
+
 /*************************** */
 // Slick slider init
 
 $('.slider').slick({
-    arrows: true,
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true,
-    draggable: false
-  });
-  
-  $('.slider')
-    .on('beforeChange', function(event, slick, currentSlide, nextSlide){
-      $('.slick-list').addClass('do-transition')
-    })
-    .on('afterChange', function(){
-      $('.slick-list').removeClass('do-transition')
-    });
-     
-  /*   $('.main-director-names p').hover(
-function(){
-  $('.panel').addClass('activo');  
-},
-function(){
-  $(this).removeClass('activo');
-}
-);*/
-/*
-$(".main-director-names p:nth-child(n)").on("click", function () {
-    if (!$('.panel').hasClass("is-active")) {
-      $('.panel').addClass("is-active")
-     
-    } else {
-      $('.panel').removeClass("is-active")
-    }
-  });
+  arrows: true,
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+  draggable: false
+});
 
-
-/*
-let tab = 0;
-  $('.main-director-names p').click(function(){
-    $(this).toggleClass('active');
-    $('.main-director_item p').parent().find('.panel').slideToggle(280);
-  });
-  */
-
-  $(document).ready(function() {
-    var classClicked = 'clicked';
-    $('.card-flip').click(function() {
-      if($(this).hasClass(classClicked)) {
-        $(this).removeClass(classClicked);
-      }
-      else {
-        $(this).addClass(classClicked);
-      }
-    })
+$('.slider')
+  .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('.slick-list').addClass('do-transition')
   })
+  .on('afterChange', function(){
+    $('.slick-list').removeClass('do-transition')
+  });
+$(document).ready(function() {
+  var classClicked = 'clicked';
+  $('.card-flip').click(function() {
+    if($(this).hasClass(classClicked)) {
+      $(this).removeClass(classClicked);
+    }
+    else {
+      $(this).addClass(classClicked);
+    }
+  })
+})
