@@ -17,7 +17,7 @@
     <div class="loading-screen"></div>
   </div>
 
-  <main class="bg-light" data-barba="container" data-barba-namespace="home-section">
+ 
     <div class="main-home">
         <header>
           <div class="main-logo">
@@ -40,7 +40,7 @@
              <!-- <li><a class="menu-link" href="#">SERVICES</a></li>
               <li><a class="menu-link" href="#">FILMS</a></li>-->
               <li><a class="menu-link" href="contact.php">CONTACT</a></li>
-              <li><a class="menu-link" href="#">Private </a></li>
+              <li><a class="menu-link" href="private.php">Private </a></li>
             </ul>
           </aside>
         </header>

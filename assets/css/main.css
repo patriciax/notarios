@@ -264,14 +264,23 @@ h1 {
   justify-content: center;
   padding-top: 3rem;
 }
+main{
+  padding-top: 3rem;
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
 footer {
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+  align-items: center;
 }
 footer p,
 footer a {
-  font-size: 10px;
+  font-size: 9px;
   color: #1d1e1c;
   letter-spacing: 1px;
   font-family: 'VanderKeur';
@@ -279,9 +288,18 @@ footer a {
 footer a:nth-child(1) {
   margin-right: 1rem;
 }
+
+.footer-info{
+  position: absolute;
+    bottom: 0;
+}
+.footer-info p{
+  font-size: 9px!important;
+}
 .main-home {
   min-height: 100%;
   margin-bottom: -50px;
+  height: 100vh;
 }
 .titles-slider {
   position: absolute;
@@ -302,19 +320,23 @@ footer a:nth-child(1) {
   letter-spacing: 1px;
 }
 .main-director {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
   margin-top: 5rem;
 }
 .main-director_item {
-  width: 50%;
+ /* width: 50%;*/
 }
-.main-director-names p {
-  font-size: 40px;
+.main-director-names {
+  font-size: 38px;
   font-family: "DrukText";
   margin-top: 0;
   margin-bottom: 0;
+
+  transform: translateX(44rem)!important;
 }
+
+
 img {
   width: 100%;
   height: 100%;
@@ -359,7 +381,21 @@ img {
   top: 0;
   height: 100vh;
   max-height: 100vh;
+  z-index: 1;
 }
+.main-panel .panel{
+  transform: translateX(-30rem);
+  opacity: 0;
+  transition: .5s;
+}
+.main-panel   .panel-active{
+  transform: translateX(0);
+  opacity: 1;
+  display: block;
+
+  transition:.7s;
+}
+
 .name-info {
   transform: translateX(32.2vw) translateY(-5.35vw) rotate(90deg);
   transform-origin: bottom left;
@@ -380,26 +416,54 @@ img {
 }
 .galeria_img {
   margin-bottom: 2rem;
+  height: 300px;
+    width: 100%;
+}
+.galeria_img img{
+  object-fit: cover;
 }
 .info p {
   font-family: "VanderKeur";
   font-size: 11px;
+  color: #1D1E1C;
+  letter-spacing: 1px;
 }
 .logo-info {
   text-align: end;
 }
 .logo-info img {
   width: 30%;
+  height: auto;
 }
+.info hr{
+  border-style: dashed;
+  color: #60625d;
+  margin: 1.5rem 0;
+}
+/*
 .main-info-hover:hover {
   transform: translateX(564px);
-}
+}*/
 .main-info:hover {
   transform: translateX(50px);
 }
+.open{
+  transform: translateX(550px)!important;
+  overflow-y: hidden;
+}
 
-.main-director-names p {
+.open .main-director-names{
+  opacity: 0;
+}
+.open .main-info:hover {
+  transform: translateX(0px);
+}
+.main-director-names  {
   cursor: pointer;
+}
+.opacity{
+  opacity: 0;
+  transition: .6s;
 }
 /*
 .panel{
@@ -718,6 +782,77 @@ width: 140px;
 }
 .contact-item:nth-child(3) .datos{
   transform: translate(10px, 4.5rem);
+}
+.main-private{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+.form{
+  background-image: url(../img/folder.png);
+  background-size: 500px;
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+.form label{
+  color: #f3ebe1;
+  font-weight: 100;
+  font-family: "VanderKeur-light";
+  text-transform: uppercase;
+
+}
+.form input{
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-bottom: 2px solid #f3ebe18a;
+  margin-left: 2rem;
+  width: 59%;
+  font-family: "VanderKeur-light";
+}
+.content-form{
+  width: 31%;
+  text-align: start;
+  position: relative;
+}
+.content-form h3{
+  color: #f2eadf;
+  font-size: 2rem;
+  font-family: "DrukText";
+}
+.mb-2{
+  margin-bottom: 2rem;
+}
+.ml-27{
+  margin-left: 2.7rem!important;
+}
+.btn{
+  background: #F2EADF;
+  width: 100%;
+  border: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+  padding: 0.5rem;
+  font-family: "VanderKeur-light";
+}
+.content-form::before{
+ 
+  content: "2022";
+  position: absolute;
+  font-family: "VanderKeur-light";
+  color: #f2eadf;
+  right: 50px;
+  top: -27px;
 }
 /*******mediasquery **********/
 @media only screen and (max-width: 600px) {

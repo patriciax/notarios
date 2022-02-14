@@ -1,5 +1,6 @@
-<?php require('partials/header.php'); ?>
 
+<?php require('partials/header.php'); ?>
+<main class="bg-light" data-barba="container" data-barba-namespace="home-section">
 
 <div class="main-video">
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" viewBox="0 0 1366 768" xml:space="preserve">
@@ -60,6 +61,5 @@
           <a href="about.php">go to about</a>
         </div>
       </div>-->
-
-
-<?php require('partials/footer.php'); ?>
+      <?php require('partials/footer.php'); ?>
+      </main>
