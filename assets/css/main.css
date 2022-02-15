@@ -133,7 +133,8 @@ h1 {
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active {
-  color: gray;
+  color: #1d1e1c;
+  border-bottom: 1px solid #121212;
 }
 
 .input-toggler:checked ~ .sidebar {
@@ -854,6 +855,7 @@ width: 140px;
   right: 50px;
   top: -27px;
 }
+
 /*******mediasquery **********/
 @media only screen and (max-width: 600px) {
   /***********************menu******************/

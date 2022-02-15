@@ -5,7 +5,7 @@
     <div class="main-director_item ">
       <!------------------panel 1--------------------------->
       <div class="main-panel">
-        <p class="main-director-names" data-aos="fade-up" data-aos-duration="1000">FELIPE CORTES </p>
+        <p class="main-director-names" >FELIPE CORTES </p>
 
         <div class="panel">
           <div class="main-galeria scroll">
@@ -64,7 +64,7 @@
       </div>
       <!------------------panel 1--------------------------->
       <div class="main-panel">
-        <p class="main-director-names" data-aos="fade-up" data-aos-duration="1000">ALEJANDRO CARREÑO </p>
+        <p class="main-director-names" >ALEJANDRO CARREÑO </p>
 
         <div class="panel">
           <div class="main-galeria scroll">
@@ -123,7 +123,7 @@
       </div>
       <!------------------panel 1--------------------------->
       <div class="main-panel">
-        <p class="main-director-names" data-aos="fade-up" data-aos-duration="1000">ESTEBAN URIBE</p>
+        <p class="main-director-names">ESTEBAN URIBE</p>
 
         <div class="panel">
           <div class="main-galeria scroll">
@@ -182,7 +182,7 @@
       </div>
       <!------------------panel 1--------------------------->
       <div class="main-panel">
-        <p class="main-director-names" data-aos="fade-up" data-aos-duration="1000">GINA MEDINA</p>
+        <p class="main-director-names" >GINA MEDINA</p>
 
         <div class="panel">
           <div class="main-galeria scroll">
@@ -241,7 +241,7 @@
       </div>
      <!------------------panel 1--------------------------->
      <div class="main-panel">
-        <p class="main-director-names" data-aos="fade-up" data-aos-duration="1000">KLAUS OBERMEYER</p>
+        <p class="main-director-names" >KLAUS OBERMEYER</p>
 
         <div class="panel">
           <div class="main-galeria scroll">

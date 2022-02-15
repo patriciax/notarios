@@ -49,6 +49,7 @@ function myscripts() {
 
   });
 }
+/***********loader*****/
 
 function delay(n) {
   n = n || 2000;

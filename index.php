@@ -1,5 +1,6 @@
 
 <?php require('partials/header.php'); ?>
+
 <main class="bg-light" data-barba="container" data-barba-namespace="home-section">
 
 <div class="main-video">
